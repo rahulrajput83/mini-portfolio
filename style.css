@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile_logo img {
+    border: 3px solid #0A6DF2;
+    border-radius: 50%;
+}
+
+.profile_logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.profile_name {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.profession {
+    margin-top: 0.2rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: hsl(207, 8%, 60%);
+    font-weight: 500;
+}
+
+.socialbtn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0.2rem;
+}
+
+.follow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0.6rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px hsl(207, 8%, 90%);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background: #0A6DF2;
+}
+
+.follow:hover {
+    background: white;
+    border: 2px solid #0A6DF2;
+}
+
+.follow a {
+    margin: auto;
+    color: white;
+    width: 40px;
+    line-height: 39px;
+    font-size: 1.2rem;
+}
+
+.follow a:hover {
+    color: #0A6DF2;
+}
+
+
+.postbtn {
+    width: 30vw;
+    margin: 2rem auto;
+    text-align: center;
+    background: #0A6DF2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0px 5px 10px hsl(207, 8%, 90%);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease-out;
+}
+
+.filter {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 550;
+    letter-spacing: 0.1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    background: transparent;
+    transition: all .3s ease-out;
+    margin: 0.2rem;
+    color: white;
+    justify-content: space-between;
+
+}
+
+.projects{
+    background: white;
+    color: #0A6DF2;
+}
+.skills_detail {
+    width: auto;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    margin: auto;
+}
+.main {
+    width: 43vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0.6rem auto;
+    justify-content: space-between;
+    align-content: center;
+}
+.main p{
+    color: #0A6DF2;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+
+.skillcontainer {
+    width: 27vw;
+    margin: auto auto auto 1rem;
+    height: 3px;
+    background: hsl(207, 8%, 90%);
+}
+.html {
+    width: 70%;
+    height: 3px;
+    background: #0A6DF2;
+}
+.css {
+    width: 70%;
+    height: 3px;
+    background: #0A6DF2;
+}
+.javascript {
+    width: 60%;
+    height: 3px;
+    background: #0A6DF2;
+}
+.node {
+    width: 50%;
+    height: 3px;
+    background: #0A6DF2;
+}
+.contact_me {
+    display: none;
+}
+
+.contact_me div {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+}
+.contact_me div button {
+    width: 20vw;
+    height: 2.5rem;
+}
+
+.container1 {
+    padding:0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+}
+
+.screen {
+    display: block;
+    width: 22rem;
+    height: 13rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1px;
+    margin: 0 auto;
+}
+.col-md-4 {
+    padding: 0 0 0.1rem 0;
+    box-shadow: 0px 10px 20px rgba(5, 9, 14, 0.425);
+    background: #0a6ef21c;
+    border-radius: 0 0 20px 0;
+}
+.screen img {
+    top: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    margin:0;
+    padding:0;
+    transition: bottom 1s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.screen:hover img {
+    top: 0;
+    transition: all 3s;
+  }
+
+#button {
+    margin: 0.3rem 0.3rem 0.3rem 0.3rem;
+}
+#preview {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    background: hsl(207, 8%, 90%);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    margin: auto auto;
+    background: black;
+    cursor: pointer;
+}
+
+#github{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    background: hsl(207, 8%, 90%);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease-out;
+    background: #0A6DF2;
+}
+#preview a, #github a{
+    color: white;
+    text-decoration: none;
+}
+
+#preview {
+    margin-left: 0.7rem;
+}
+
+
+.footer {
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+}
+.footer h1 {
+    text-align: center;
+    font-size: 0.8rem;
+    color: hsl(207, 8%, 60%);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50px;
+    border-top: 10px solid #0A6DF2;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto 1rem auto;
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Responsive Style */
+
+@media (max-width: 850px) {
+    .postbtn {
+        width: 90vw;
+        margin: 1rem auto;
+        border-radius: 0.5rem;
+    }
+    .filter {
+        padding: 0.7rem;
+        border-radius: 0.25rem;
+    }
+    .container1 {
+        grid-template-columns: auto;
+    }
+    .screen {
+        width: 90vw;
+        height: 15rem;
+    }
+    .main {
+        width: auto;
+    }
+    .main #hide {
+        display: none;
+    }
+    .skillcontainer {
+        width: 70vw;
+    }
+    .contact_me div {
+        grid-template-columns: auto;
+        gap: 1.5rem;
+    }
+    .contact_me div button {
+        width: 60vw;
+    }
+}
